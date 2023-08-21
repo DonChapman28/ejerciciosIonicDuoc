@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'menu',
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
+  {
+    path: 'cuatro',
+    loadChildren: () => import('./cuatro/cuatro.module').then( m => m.CuatroPageModule)
+  },
 
 ];
 
