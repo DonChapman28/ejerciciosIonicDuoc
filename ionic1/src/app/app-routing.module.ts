@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'tres',
     loadChildren: () => import('./tres/tres.module').then( m => m.TresPageModule)
   },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
 
 ];
 
