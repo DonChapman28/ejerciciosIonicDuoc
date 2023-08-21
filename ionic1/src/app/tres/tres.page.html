@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>emolgaGOD</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<h1>emolga godnazi</h1>
+<ion-input type="text" placeholder="emolgaGod">ingese nombre</ion-input>
+<ion-input type="text" label="apellido" placeholder="emolgaGod"></ion-input>
+<ion-input type="number" label="edad" placeholder="ingrese edad"></ion-input>
+
+
+<ion-input type="email" label="email" 
+          labelPlacement="floating" 
+          helperText="Ingrese correo valido"
+          errorText="correo no valido"
+          ngModel
+          email
+          ></ion-input>
+
+
+<ion-input type="password" label="contraseña" placeholder="ingrese contraseña"></ion-input>
+<ion-input label="direccion" labelPlacement="stacked" placeholder="A.V. 1501"></ion-input>
+<ion-input label="Carrera" labelPlacement="floating" placeholder="informatica"></ion-input>
+<ion-input label="Jornada" labelPlacement="stacked" placeholder="informatica" [clearInput]="true"></ion-input>
+<ion-input label="cuentaCaracteres" labelPlacement="floating" [counter]="true" maxlength="30"></ion-input>
+
+<ion-input type="Text" placeholder="valor carrera" fill="solid"></ion-input>
+<ion-input type="Text" placeholder="valor mensual" fill="outline"></ion-input>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>pokimonis</ion-title>
+  </ion-toolbar>
+</ion-footer>
