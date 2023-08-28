@@ -15,4 +15,11 @@
   <ion-button (click)="alerta()" expand="block" fill="clear" shape="round">
     Click me.
   </ion-button>
+  <ion-label>El valor del numero es: {{ numero2 }}</ion-label>
+  <br>
+  <ion-button (click)="incrementar()">
+    <ion-icon slot="start" name="add"></ion-icon>
+    Aumentar
+  </ion-button>
+  <ion-label>valor actual: {{ numero }}</ion-label>
 </ion-content>

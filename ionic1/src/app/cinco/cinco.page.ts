@@ -31,4 +31,9 @@ export class CincoPage implements OnInit {
 await alert.present();
 }
 
+async incrementar()
+  {
+    this.numero += 1;
+  }
+
 }
