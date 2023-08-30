@@ -9,6 +9,7 @@ export class SeisPage implements OnInit {
   nombre : string;
   edad : number;
   mensaje : string = "Premium";
+  permitir : boolean = false;
 
   asignaturas = [
                 {nombre:"base de datos", nota:50},
@@ -26,6 +27,11 @@ export class SeisPage implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  mostrarDatos()
+  {
+    this.permitir = !this.permitir;
   }
 
 }
