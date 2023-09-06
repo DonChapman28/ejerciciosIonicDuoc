@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>calculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-text color="primary">
+    <h1>ejercicio suma </h1>
+    <ion-grid fixed>
+    
+    <ion-row>
+      <ion-col size="9">
+        <input type="number" [(ngModel)]="nota1" placeholder="nota1">
+      </ion-col>
+    </ion-row>  
+    <ion-row>
+      <ion-col size="9">
+        <input type="number" [(ngModel)]="nota2" placeholder="nota2">
+      </ion-col>
+    </ion-row>  
+    <ion-row>
+      <ion-col size="9">
+        <input type="number" [(ngModel)]="nota3" placeholder="nota3">
+      </ion-col>
+    </ion-row>  
+    <ion-row>
+      <ion-col size="6">
+        <ion-button (click)="calcular()"><ion-icon name="eye-outline"></ion-icon>
+        Calcular</ion-button>
+      </ion-col>
+
+      <ion-text color="primary">
+        <ion-item *ngIf="calcular">
+        <ion-label>total: {{prom}} </ion-label>
+        </ion-item>
+        
+        </ion-text>
+    </ion-row>  
+ 
+    
+     
+    </ion-grid>
+    
+
+  </ion-text>
+</ion-content>

@@ -14,7 +14,8 @@ const routes: Routes = [
   {
     path: 'uno',
     loadChildren: () => import('./uno/uno.module').then( m => m.UnoPageModule)
-  },  {
+  },
+  {
     path: 'dos',
     loadChildren: () => import('./dos/dos.module').then( m => m.DosPageModule)
   },
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'siete',
     loadChildren: () => import('./siete/siete.module').then( m => m.SietePageModule)
+  },
+  {
+    path: 'calculadora',
+    loadChildren: () => import('./calculadora/calculadora.module').then( m => m.CalculadoraPageModule)
   },
 
 ];
