@@ -14,23 +14,28 @@
   <ion-item>
     <ion-label position="floating">Rut</ion-label>
     <ion-input type="text" [(ngModel)]="persona.rut"></ion-input>
+    <label>{{ personaDatos.rut }}</label>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Nombre</ion-label>
     <ion-input type="text" [(ngModel)]="persona.nombre"></ion-input>
+    <label>{{ personaDatos.nombre }}</label>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Contraseña</ion-label>
     <ion-input type="password" [(ngModel)]="persona.edad"></ion-input>
+    <label>{{ personaDatos.edad }}</label>
   </ion-item>
+
+  <ion-button (click)="limpiar()">Limpiar</ion-button>
 
   <ion-fab vertical="bottom" horizontal="end">
     <ion-fab-button><ion-icon name="code"></ion-icon></ion-fab-button>
     <ion-fab-list side="start">
       <ion-fab-button (click)="agregar()"><ion-icon name="add-outline"></ion-icon></ion-fab-button>
-      <ion-fab-button><ion-icon name="remove-outline"></ion-icon></ion-fab-button>
-      <ion-fab-button><ion-icon name="search-outline"></ion-icon></ion-fab-button>
-      <ion-fab-button><ion-icon name="list-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button (click)="eliminarPorRut()"><ion-icon name="remove-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button (click)="buscarPorRut()"><ion-icon name="search-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button href="dos"><ion-icon name="list-outline"></ion-icon></ion-fab-button>
     </ion-fab-list>
   </ion-fab>
 </ion-content>

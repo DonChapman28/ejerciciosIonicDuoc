@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'uno',
     loadChildren: () => import('./uno/uno.module').then( m => m.UnoPageModule)
   },
+  {
+    path: 'dos',
+    loadChildren: () => import('./dos/dos.module').then( m => m.DosPageModule)
+  },
   
 
 ];
