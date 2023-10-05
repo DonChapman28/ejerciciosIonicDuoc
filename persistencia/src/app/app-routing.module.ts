@@ -11,6 +11,12 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'uno',
+    loadChildren: () => import('./uno/uno.module').then( m => m.UnoPageModule)
+  },
+  
+
 ];
 
 @NgModule({
