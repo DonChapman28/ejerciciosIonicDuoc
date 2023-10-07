@@ -72,7 +72,7 @@ export class UnoPage implements OnInit {
       }
     } else {
       // El campo 'rut' está vacío, debes manejar esta situación según tus necesidades
-      console.log('El campo "rut" está vacío, no se realizará la búsqueda.');
+      console.log('El campo rut está vacío, no se realizará la búsqueda');
     }
   }
   
