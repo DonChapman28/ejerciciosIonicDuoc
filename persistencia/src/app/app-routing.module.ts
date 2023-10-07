@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'dos',
     loadChildren: () => import('./dos/dos.module').then( m => m.DosPageModule)
   },
+  {
+    path: 'dos/:idUsuario',
+    loadChildren: () => import('./dos/dos.module').then( m => m.DosPageModule)
+  },
+  {
+    path: 'unolistado',
+    loadChildren: () => import('./unolistado/unolistado.module').then( m => m.UnolistadoPageModule)
+  },
   
 
 ];

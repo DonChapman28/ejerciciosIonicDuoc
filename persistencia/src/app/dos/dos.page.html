@@ -11,10 +11,21 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-list>
-    <ion-item *ngFor="let key of getKeys(persona)">
-      <ion-label>{{ key }}</ion-label>
-      <ion-text>{{ persona[key] }}</ion-text>
+  <ng-container *ngIf="personaDatos">
+    <ion-item>
+      <ion-label>RUT:</ion-label>
+      <ion-text>{{ personaDatos.rut }}</ion-text>
     </ion-item>
-  </ion-list>
+    <ion-item>
+      <ion-label>Nombre:</ion-label>
+      <ion-text>{{ personaDatos.nombre }}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Edad:</ion-label>
+      <ion-text>{{ personaDatos.edad }}</ion-text>
+    </ion-item>
+  </ng-container>
+
+  <ion-button (click)="eliminarPorRut()">eliminar</ion-button>
+  
 </ion-content>
