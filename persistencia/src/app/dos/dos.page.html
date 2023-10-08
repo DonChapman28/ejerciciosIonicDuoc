@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>dos</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="unolistado"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -11,21 +14,33 @@
     </ion-toolbar>
   </ion-header>
 
-  <ng-container *ngIf="personaDatos">
-    <ion-item>
-      <ion-label>RUT:</ion-label>
-      <ion-text>{{ personaDatos.rut }}</ion-text>
-    </ion-item>
-    <ion-item>
-      <ion-label>Nombre:</ion-label>
-      <ion-text>{{ personaDatos.nombre }}</ion-text>
-    </ion-item>
-    <ion-item>
-      <ion-label>Edad:</ion-label>
-      <ion-text>{{ personaDatos.edad }}</ion-text>
-    </ion-item>
-  </ng-container>
-
-  <ion-button (click)="eliminarPorRut()">eliminar</ion-button>
   
+  
+  <ion-grid class="card">
+    <ion-row>
+      <ion-col class="ion-content-center">
+        
+        <ng-container *ngIf="personaDatos">
+          <ion-item>
+            <ion-label>RUT:</ion-label>
+            <ion-text>{{ personaDatos.rut }}</ion-text>
+          </ion-item>
+          <ion-item>
+            <ion-label>Nombre:</ion-label>
+            <ion-text>{{ personaDatos.nombre }}</ion-text>
+          </ion-item>
+          <ion-item>
+            <ion-label>Edad:</ion-label>
+            <ion-text>{{ personaDatos.pass }}</ion-text>
+          </ion-item>
+        </ng-container>
+
+        <br>
+      
+        <ion-button (click)="eliminarPorRut()">eliminar</ion-button>
+  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>

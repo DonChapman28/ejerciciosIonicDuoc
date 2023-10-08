@@ -46,12 +46,7 @@ export class UnoPage implements OnInit {
     }
   }
   
-  async limpiar()
-  {
-   
-    this.personaDatos = {};
-    
-  }
+ 
 
   async eliminarPorRut() {
     // Verificar si el campo 'rut' tiene un valor

@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>unolistado</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="uno"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -11,9 +14,20 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-item *ngFor="let persona of personas" [routerLink]="['/dos/'+ persona.rut]" >
-    <ion-label>{{persona.rut}}</ion-label>
-    <ion-label>{{persona.nombre}}</ion-label>
-    <ion-label>{{persona.direccion}}</ion-label>
-  </ion-item>
+  <ion-grid class="card">
+    <ion-row>
+      <ion-col class="ion-content-center">
+        
+        <ion-item *ngFor="let persona of personas" [routerLink]="['/dos/'+ persona.rut]" >
+          <ion-label>{{persona.rut}}</ion-label>
+          <ion-label>{{persona.nombre}}</ion-label>
+          <ion-label>{{persona.pass}}</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+    
+    
+      
+  
 </ion-content>
