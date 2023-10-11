@@ -32,6 +32,7 @@ export class UnoPage implements OnInit {
         if (datos) {
           // Los datos se leyeron exitosamente, ahora puedes asignarlos a la propiedad 'persona' para mostrarlos en el HTML
           this.personaDatos = datos;
+          this.persona = []; 
         } else {
           // Manejar el caso en el que no se encontraron datos para la clave proporcionada
           console.log('No se encontraron datos en el almacenamiento local para la clave:', this.persona.rut);
@@ -71,5 +72,11 @@ export class UnoPage implements OnInit {
     }
   }
   
-  
+  async limpiar()
+  {
+
+    
+    this.personaDatos = {};
+
+  }
 }
